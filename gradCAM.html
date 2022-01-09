@@ -14259,7 +14259,7 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Basic-CAM-ad-Grad-CAM-Implementation-on-MNIST">Basic CAM ad Grad-CAM Implementation on MNIST<a class="anchor-link" href="#Basic-CAM-ad-Grad-CAM-Implementation-on-MNIST">&#182;</a></h1><p>Made to go along with the <a href="https://berkan.xyz/posts/2021/12/gradCAM/">Grad-CAM and Basic CNN Interpretability</a> blog post.</p>
+<h1 id="Basic-CAM-and-Grad-CAM-Implementation-on-MNIST">Basic CAM and Grad-CAM Implementation on MNIST<a class="anchor-link" href="#Basic-CAM-and-Grad-CAM-Implementation-on-MNIST">&#182;</a></h1><p>Made to go along with the <a href="https://berkan.xyz/posts/2021/12/gradCAM/">Grad-CAM and Basic CNN Interpretability</a> blog post.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -15286,7 +15286,7 @@ loss: 0.003053  [16000/60000]
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">grad_cam_model</span> <span class="o">=</span> <span class="n">Grad_CAM_CNN</span><span class="p">()</span>
-<span class="n">grad_cam_model</span><span class="o">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;gradCAMModel1641603493.5437083.pth&quot;</span><span class="p">))</span>
+<span class="n">grad_cam_model</span><span class="o">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;gradCAMModel.pth&quot;</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -16214,26 +16214,6 @@ Truth: 9, Pred: 9
 
 </div>
 
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Guided-Grad-CAM">Guided Grad-CAM<a class="anchor-link" href="#Guided-Grad-CAM">&#182;</a></h2><p>High resolution and class specific</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
 </div>
 
 </div>
